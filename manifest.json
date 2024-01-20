@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Screen size teller",
+  "version": "1.0.0",
+  "description": "Tells the screen size of the current window for responsive designing purposes",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon57.png",
+    "128": "icon120.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "action": {},
+  "author": "rishujain0721@gmail.com"
+}
