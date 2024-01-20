@@ -23,12 +23,20 @@ function injectedFunction() {
     pTag.style.padding = "10px";
     document.body.appendChild(pTag);
     function updateWindowSize() {
-      if(!document.getElementById("size")) return 0;
-      var width = window.innerWidth;
-      var height = window.innerHeight;
+      if (!document.getElementById("size")) return 0;
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      let tailwindBreakpoint;
+      if (width > 1536) tailwindBreakpoint = "2xl";
+      else if (width > 1280) tailwindBreakpoint = "xl";
+      else if (width > 1024) tailwindBreakpoint = "lg";
+      else if (width > 768) tailwindBreakpoint = "md";
+      else if (width > 640) tailwindBreakpoint = "sm";
+      else tailwindBreakpoint = "";
+
       document.getElementById(
         "size"
-      ).textContent = `Size: ${width} x ${height}`;
+      ).innerHTML = `Size: ${width} x ${height} <br> TW breakpoint : ${tailwindBreakpoint} `;
     }
 
     updateWindowSize();
