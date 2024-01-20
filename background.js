@@ -18,7 +18,7 @@ function injectedFunction() {
     pTag.style.top = "0";
     pTag.style.left = "0";
     pTag.style.zIndex = "10000"; // High z-index to ensure it's above other elements
-    pTag.style.backgroundColor = "#FFF";
+    pTag.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
     pTag.style.color = "#000";
     pTag.style.padding = "10px";
     document.body.appendChild(pTag);
