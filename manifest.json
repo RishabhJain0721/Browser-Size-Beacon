@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Screen size teller",
+  "name": "Browser Size Beacon",
   "version": "1.0.0",
   "description": "Tells the screen size of the current window for responsive designing purposes",
   "icons": {

@@ -1,4 +1,4 @@
-## Window Size Teller Extension :
+## Browser Size Beacon Extension :
 
 This extension tells you the current size of window to help make responsive designs. </br>
 Unlike regular extensions which close as soon as you click outside the extension popup, it persists while you resize the window. Made to help create responsive designs by closely observing the breakpoints.
